@@ -27,9 +27,9 @@ export default function Navbar() {
         </div>
         <div className="hidden lg:flex lg:gap-x-12">
           {navigation.map((item) => (
-            <a key={item.name} href={item.href} className="text-sm font-semibold leading-6 text-gray-900">
+            <Link key={item.name} href={item.href} className="text-sm font-semibold leading-6 text-gray-900">
               {item.name}
-            </a>
+            </Link>
           ))}
         </div>
         <div className='flex-1 flex items-center justify-end gap-x-2 '>
