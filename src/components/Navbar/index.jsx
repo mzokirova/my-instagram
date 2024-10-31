@@ -26,11 +26,12 @@ export default function Navbar() {
           </a>
         </div>
         <div className="hidden lg:flex lg:gap-x-12">
-          {navigation.map((item) => (
-            <Link key={item.name} to={item.href} className="text-sm font-semibold leading-6 text-gray-900">
-              {item.name}
+            <Link  to="/" className="text-sm font-semibold leading-6 text-gray-900">
+              Home
             </Link>
-          ))}
+            <Link  to="/users" className="text-sm font-semibold leading-6 text-gray-900">
+              Users
+            </Link>
         </div>
         <div className='flex-1 flex items-center justify-end gap-x-2 '>
             <img src={profile} alt="profile"  className='w-10 h-10 '/>
@@ -98,15 +99,12 @@ export default function Navbar() {
           <div className="mt-6 flow-root">
             <div className="-my-6 divide-y divide-gray-500/10">
               <div className="space-y-2 py-6">
-                {navigation.map((item) => (
-                  <Link
-                    key={item.name}
-                    to={item.href}
-                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                  >
-                    {item.name}
-                  </Link>
-                ))}
+              <Link  to="/" className="text-sm font-semibold leading-6 text-gray-900">
+              Home
+            </Link>
+            <Link  to="/users" className="text-sm font-semibold leading-6 text-gray-900">
+              Users
+            </Link>
               </div>
               <div className="py-6">
                 <Link to="/login"  className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
